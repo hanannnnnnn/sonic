@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <style>
+    body {
+      background-color: rgb(53, 53, 231);
+    }
+
+    #sonic {
+      opacity: 0.25;
+      width: 100%;
+    }
+
+    @keyframes fadeintome {
+      from {
+        opacity: 50%;
+        top: -100px;
+      }
+
+      to {
+        opacity: 100%;
+        top: 0;
+      }
+    }
+
+    @keyframes fadeintoyou {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 100%;
+      }
+    }
+
+    #darksonic {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 250px;
+      animation: fadeintome 1s;
+    }
+
+    #cloud {
+      position: absolute;
+      top: 20px;
+      right: 200px;
+      width: 200px;
+      height: 133px;
+      background-image: url(https://static.vecteezy.com/system/resources/thumbnails/022/804/104/small_2x/white-paper-clouds-and-shadows-speech-bubble-image-isolated-on-transparent-background-communication-bubbles-png.png);
+      background-size: contain;
+      animation: fadeintoyou 2s;
+
+
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+  </style>
+  <img id="sonic"
+    src="https://cdn.prod.website-files.com/64d9012acfc1e7e6c6522bb9/65b0583eeb4cdab3d2e5588b_Movie_SonicFranch.webp">
+  <div id="cloud">
+    <b>you're too slow!</b>
+
+
+  </div>
+
+  <img id="darksonic" src="https://qph.cf2.quoracdn.net/main-qimg-6e078503102307b4127402628f444fe4" alt="">
+
+
+  <style>
+    .buy-button {
+      background-color: rgba(255, 153, 0, 0.849);
+      border: none;
+      border-radius: 100px;
+      height: 80px;
+      width: 200px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: opacity 0.15s;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
+    }
+
+    .buy-button:hover {
+      opacity: 0.7;
+    }
+
+    .buy-button:active {
+      opacity: 0.5;
+    }
+  </style>
+  <a href="oo.html">
+    
+    <button class="buy-button">click</button>
+  </a>
+
+
+
+</body>
+
+</html>
